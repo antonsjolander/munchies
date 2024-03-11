@@ -1,6 +1,6 @@
 import { FilterBtn } from "./FilterBtn";
-import type { ResturantType } from "../types";
-import { setDeliveryLabel } from "../lib/utils";
+import type { ResturantType } from "../../types";
+import { setDeliveryLabel } from "../../lib/utils";
 export function DeliveryTime({
 	deliveryTime,
 	filterdResturants,

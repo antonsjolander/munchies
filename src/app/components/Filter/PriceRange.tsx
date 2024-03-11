@@ -1,6 +1,6 @@
 import { FilterBtn } from "./FilterBtn";
-import type { PriceRangeType } from "../types";
-import { BASE_URL } from "../lib/contants";
+import type { PriceRangeType } from "../../types";
+import { BASE_URL } from "../../lib/contants";
 export function PriceRange({
 	priceRange,
 	filterdResturants,
@@ -12,7 +12,7 @@ export function PriceRange({
 		...new Set(filterdResturants.map((item) => item.price_range_id)),
 	];
 	return (
-		<div className="hidden sm:flex flex-col gap-y-2 items-start mb-8">
+		<div className="hidden md:flex flex-col gap-y-2 items-start mb-8">
 			<h3 className="text-body uppercase opacity-40 mb-2">Price Range</h3>
 			<div className="flex gap-1 flex-wrap">
 				{priceRange.map((id: string) => (

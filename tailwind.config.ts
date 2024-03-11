@@ -16,7 +16,7 @@ const config: Config = {
 			fontSize: {
 				display: "2.5rem",
 				h1: "1.5rem",
-				h1sm: "1.25rem",
+				h1md: "1.25rem",
 				title: "0.875rem",
 				body: "0.75rem",
 			},

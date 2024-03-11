@@ -80,7 +80,7 @@ export default async function Home({
 		];
 
 		return (
-			<main className="grid grid-cols-1 sm:grid-cols-[239px_minmax(320px,_1fr)] md:gap-4">
+			<main className="grid grid-cols-1 md:grid-cols-[239px_minmax(320px,_1fr)] md:gap-4">
 				<Filter
 					filters={filters}
 					deliveryTime={deliveryTime}

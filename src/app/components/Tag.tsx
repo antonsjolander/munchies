@@ -13,7 +13,7 @@ export function Tag({
 	};
 	return (
 		<div
-			className={`rounded-full flex text-body items-center gap-2 border border-stroke py-2 px-3 ${className[variant]}`}
+			className={`rounded-full flex text-body items-center gap-1 border border-stroke py-2 px-3 ${className[variant]}`}
 		>
 			{variant === "indicator" && (
 				<i

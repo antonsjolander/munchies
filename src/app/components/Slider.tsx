@@ -1,10 +1,10 @@
 import type { FilterType } from "../types";
 import Image from "next/image";
-import { FilterBtn } from "./FilterBtn";
+import { FilterBtn } from "./Filter/FilterBtn";
 
 export function Slider({ filters }: { filters: FilterType[] }) {
 	return (
-		<div className={`flex gap-3 mb-6 overflow-scroll pl-6 sm:pl-0`}>
+		<div className={`flex gap-3 mb-6 overflow-scroll pl-6 md:pl-0`}>
 			{filters.map((filter) => (
 				<Slide key={filter.id} {...filter} />
 			))}
@@ -18,7 +18,7 @@ function Slide({ name, image_url, id }: FilterType) {
 			<Image
 				className="absolute right-0 top-0 bottom-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out"
 				src={image_url}
-				alt={name}
+				alt={`card image for ${name}`}
 				width={80}
 				height={80}
 			/>
