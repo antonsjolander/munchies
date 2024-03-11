@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 			"Find the best restaurants in your city and get it delivered to your place!",
 		type: "website",
 		url: "munchies-silk.vercel.app",
-		images: "/og-image.png",
+		images: "/og-image.jpg",
 	},
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<header className="mt-14 mb-6 md:mb-12 px-6 2xl:px-0 max-w-[90rem] mx-auto">
+				<header className="mt-10 md:mt-14 mb-6 md:mb-12 px-6 2xl:px-0 max-w-[90rem] mx-auto">
 					<Logo className="w-[167.17px] md:w-auto" />
 				</header>
 				<div className="max-w-[90rem] mx-auto">{children}</div>
