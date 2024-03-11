@@ -3,11 +3,13 @@ import { Logo } from "./Logo";
 import { use, useState } from "react";
 export function StartScreen() {
 	const [show, setShow] = useState(true);
-
 	return (
 		show && (
 			<div className="fixed inset-0 flex md:hidden  flex-col p-5 items-start justify-between h-svh text-body bg-green text-white">
-				<Logo fill={"#fff"} className="mt-14 w-[167.17px] md:w-auto" />
+				<Logo
+					fill={"#fff"}
+					className="mt-10 md:mt-14 w-[167.17px] md:w-auto"
+				/>
 				<div className="max-w-60">
 					<h1
 						// maybe im in the wrong here. but feels like the font is squashed on the y-axis ¯\_(ツ)_/¯
