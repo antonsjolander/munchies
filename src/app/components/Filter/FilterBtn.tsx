@@ -26,7 +26,6 @@ export function FilterBtn({
 	const createQueryString = useCallback(
 		(name: string, value: string) => {
 			const params = new URLSearchParams(searchParams.toString());
-			// console.log(params.getAll(name).includes(value), name, value);
 			if (params.getAll(name).includes(value)) {
 				params.delete(name, value);
 			} else if (multiple) {
