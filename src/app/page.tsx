@@ -4,6 +4,8 @@ import { Slider } from "./components/Slider";
 import { BASE_URL } from "./lib/contants";
 import type { ResturantType, FilterType } from "./types";
 
+export const revalidate = 0;
+
 export default async function Home({
 	searchParams,
 	...props
