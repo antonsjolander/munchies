@@ -39,8 +39,8 @@ export function FilterBtn({
 	);
 
 	const classNames = {
-		button: `bg-white focus-visible:bg-white md:hover:bg-green focus-visible:outline-green focus-visible:text-black text-black border border-stroke md:hover:text-white text-body py-2 px-3 rounded-lg ${
-			active ? "bg-green text-white" : ""
+		button: ` focus-visible:bg-white md:hover:bg-green focus-visible:outline-green focus-visible:text-black text-black border border-stroke md:hover:text-white text-body py-2 px-3 rounded-lg ${
+			active ? "bg-green text-white" : "bg-white"
 		}`,
 		card: `focus-visible:bg-white focus-visible:outline-green md:hover:bg-green focus-visible:text-black md:hover:text-white group w-[160px] h-[80px] p-3 border-stroke border overflow-hidden flex-shrink-0 rounded-[8px] ${
 			active ? "bg-green text-white" : "bg-white text-black"
