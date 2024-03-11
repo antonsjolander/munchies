@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FilterBtn } from "./Filter/FilterBtn";
 
 export function Slider({ filters }: { filters: FilterType[] }) {
+	//TODO: Add Drag to scroll functionality
 	return (
 		<div className={`flex gap-3 mb-6 overflow-scroll pl-6 md:pl-0`}>
 			{filters.map((filter) => (

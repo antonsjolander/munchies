@@ -29,6 +29,7 @@ export default function RootLayout({
 					<Logo className="w-[167.17px] md:w-auto" />
 				</header>
 				<div className="max-w-[90rem] mx-auto">{children}</div>
+				{/* TODO: only reander this if the user is on a mobile device */}
 				<StartScreen />
 			</body>
 		</html>
