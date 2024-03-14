@@ -52,6 +52,7 @@ export function FilterBtn({
 			aria-disabled={disabled}
 			className={`${classNames[variant]} transition-colors duration-150 ease-out`}
 			href={`${pathname}?${createQueryString(type, value)}`}
+			shallow
 		>
 			{children}
 		</Link>
